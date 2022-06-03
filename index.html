@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Semantics</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<button class="header__button menu-btn" role="openMainMenuButton" onclick="openNav()"><img src="./img/1.png"
+					alt=""></button>
+			<h1 class="header__app_name">QA POS</h1>
+			<div class="header__third_section">
+				<img src="./img/3.png" role="userPhoto" alt="" class="header__user_photo">
+				<p class="user_name">MaxSaveskul</p>
+				<button class="header__button" role="comeOut"><img src="./img/2.png" alt=""></button>
+			</div>
+		</header>
+		<div class="app">
+			<main class="main">
+				<div class="toolbar">
+					<div class="toolbar__buttons">
+						<button class="toolbar__button" role="add"><img src="./img/6.png" alt="plus"></button>
+						<button class="toolbar__button" role="search"><img src="./img/7.png" alt="search"></button>
+						<button class="toolbar__button" role="down"><img src="./img/8.png" alt="down"></button>
+					</div>
+					<form action="">
+						<input type="search" class="search" placeholder="Search">
+					</form>
+				</div>
+
+				<section class="choose_item">
+					<div class="choose_item__nav">
+						<div class="choose_item__buttons">
+							<button class="choose_item__button" role="tabs"><img src="./img/4.png" alt="tabs"></button>
+							<button class="choose_item__button" role="arrow down"><img src="./img/5.png"
+									alt="arrow down"></button>
+						</div>
+						<nav>
+							<ul class="choose_item__items">
+								<li><button class="choose_item__item chosen">Products</button></li>
+								<li><button class="choose_item__item">Categories</button></li>
+								<li><button class="choose_item__item">Clothing</button></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="products">
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Sunglasses" src="./img/16.png" alt="Sunglasses"
+								class="item_photo">
+							<p class="item_name">Sunglasses</p>
+							<p class="item_price">$50.00</p>
+							<p class="variations">14 variations</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="SunglassesSimple" src="./img/16.png"
+								alt="Sunglasses Simple" class="item_photo">
+							<p class="item_name">Sunglasses Simple</p>
+							<p class="item_price">$50.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="SunglassesSimpleTest" src="./img/16.png"
+								alt="Sunglasses Simple Test" class="item_photo">
+							<p class="item_name">Sunglasses Simple Test</p>
+							<p class="item_price">$50.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="HoodieWithZipper" src="./img/17.png"
+								alt="Hoodie with Zipper" class="item_photo">
+							<p class="item_name">Hoodie with Zipper</p>
+							<p class="item_price">$45.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Hoodie" src="./img/18.png" alt="Hoodie"
+								class="item_photo">
+							<p class="item_name">Hoodie</p>
+							<p class="item_price">$42.00</p>
+							<p class="variations">4 variations</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="HoodieWithPocket" src="./img/19.png"
+								alt="Hoodie with Pocket" class="item_photo">
+							<p class="item_name">Hoodie with Pocket</p>
+							<p class="item_price">$35.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Belt" src="./img/20.png" alt="Belt"
+								class="item_photo">
+							<p class="item_name">Belt</p>
+							<p class="item_price">$25.55</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="LongSleeveTee" src="./img/25.png"
+								alt="Long Sleeve Tee" class="item_photo">
+							<p class="item_name">Long Sleeve Tee</p>
+							<p class="item_price">$25.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Light" src="./img/15.png" alt="Light"
+								class="item_photo">
+							<p class="item_name">Light</p>
+							<p class="item_price">$25.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="CopperToppedLantern" src="./img/15.png"
+								alt="Copper Topped Lantern" class="item_photo">
+							<p class="item_name">Copper Topped Lantern</p>
+							<p class="item_price">$22.10</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Something" src="./img/22.png" alt="Something"
+								class="item_photo">
+							<p class="item_name">Something</p>
+							<p class="item_price">$50.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Something" src="./img/21.png" alt="Something"
+								class="item_photo">
+							<p class="item_name">Something</p>
+							<p class="item_price">$50.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Something" src="./img/26.png" alt="Something"
+								class="item_photo">
+							<p class="item_name">Something</p>
+							<p class="item_price">$50.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Something" src="./img/27.png" alt="Something"
+								class="item_photo">
+							<p class="item_name">Something</p>
+							<p class="item_price">$50.00</p>
+						</div>
+						<div class="product_item">
+							<div class="special_div_for_button"><button class="item_info_button" role="info"><img
+										src="./img/info.png" alt="info" class="info-photo"></button></div>
+							<img role="itemPhoto" aria-labelledby="Something" src="./img/28.png" alt="Something"
+								class="item_photo">
+							<p class="item_name">Something</p>
+							<p class="item_price">$50.00</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<aside class="aside">
+				<div class="toolbar2">
+					<button class="customer_button" id="myBtn">
+						<img src="./img/9.png" alt="user icon" class="customer_button__img">
+						<p class="add_customer">Add Customer</p>
+					</button>
+					<p class="guest">Guest</p>
+				</div>
+
+				<section class="product">
+					<div class="product__nav">
+						<p class="product__nav_text">Product</p>
+						<div class="product__right">
+							<p class="product__nav_text">Total</p>
+							<button class="product__button"><img src="./img/10.png" alt="arrow down"></button>
+						</div>
+					</div>
+					<div class="product__list">
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="HoodieBlueNo" src="./img/17.png"
+								alt="Hoodie - Blue, No" class="product__el_photo">
+							<p class="product__el_name">Hoodie - Blue, No</p>
+							<div class="product__list_left">
+								<span>2</span>
+								<p class="product__el_name">$89.10</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="Belt" src="./img/20.png" alt="Belt"
+								class="product__el_photo">
+							<p class="product__el_name">Belt</p>
+							<div class="product__list_left">
+								<span>3</span>
+								<p class="product__el_name">$75.88</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="SunglassesGray" src="./img/16.png"
+								alt="Sunglasses - Gray" class="product__el_photo">
+							<p class="product__el_name">Sunglasses - Gray</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$49.50</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="SunglassesGray" src="./img/16.png"
+								alt="Sunglasses - Gray" class="product__el_photo">
+							<p class="product__el_name">Sunglasses - Gray</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$49.50</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="SunglassesGray" src="./img/16.png"
+								alt="Sunglasses - Gray" class="product__el_photo">
+							<p class="product__el_name">Sunglasses - Gray</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$49.50</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="HoodieWithPocket" src="./img/19.png"
+								alt="Hoodie with Pocket" class="product__el_photo">
+							<p class="product__el_name">Hoodie with Pocket</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$34.65</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="LongSleeveTee" src="./img/25.png"
+								alt="Long Sleeve Tee" class="product__el_photo">
+							<p class="product__el_name">Long Sleeve Tee</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$24.75</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="BeltBandsMedium" src="./img/20.png"
+								alt="Belt Bands - medium" class="product__el_photo">
+							<p class="product__el_name">Belt Bands - medium</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$9.90</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="Virtual" src="./img/15.png" alt="Virtual"
+								class="product__el_photo">
+							<p class="product__el_name">Virtual</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$8.61</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="TestProductPhoto" src="./img/26.png"
+								alt="Test Product Photo" class="product__el_photo">
+							<p class="product__el_name">Test Product Photo</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$10.10</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+						<div class="product__el">
+							<img role="itemPhoto" aria-labelledby="HoodieBlueNo" src="./img/21.png"
+								alt="Hoodie - Blue, No" class="product__el_photo">
+							<p class="product__el_name">Hoodie - Blue, No</p>
+							<div class="product__list_left">
+								<p class="product__el_name">$5.94</p>
+								<button role="more-info" class="product__el_more"><img src="./img/11.png"
+										alt="more info"></button>
+							</div>
+						</div>
+					</div>
+					<div class="product__nav2">
+						<div class="product__image">
+							<button class="up" role="up"><img src="./img/12.png" alt="up" class="product__img"
+									width="28px"></button>
+
+						</div>
+						<div class="product__price">
+							<div class="products__taxes">
+								<img role="arrowUp" src="./img/13.png" alt="arrow up" width="24px">
+								<div class="includes">Includes Taxes</div>
+								<div class="total">Total</div>
+							</div>
+
+							<div class="products__money">$417.28</div>
+						</div>
+					</div>
+					<div class="product_last">
+						<button class="product_last__left_button">|||</button>
+						<button class="product_last__right_button">Checkout $417.28</button>
+					</div>
+				</section>
+
+		</div>
+		</aside>
+		<div id="myModal" class="modal">
+
+
+			<div class="modal-content">
+				<p class="close">&times;</p>
+				<p class="modal_heading">Select customer</p>
+				<form action="">
+					<button class="add_new_customer">
+						<img role="AddNewCustomer" src="./img/addNewCustomer.png" alt="Add New Customer" width="30px">
+						<p class="button_text">Add New Customer</p>
+					</button>
+					<button class="view_customers">
+						<img role="ViewCustomers" src="./img/viewCustomers.png" alt="View Customers" width="40px">
+						<p class="button_text">View Customers</p>
+					</button>
+					<input type="search" class="modal_search" placeholder="Search Customers">
+				</form>
+				<p class="modal_recommendation">Please enter 3 or more characters</p>
+			</div>
+
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="sidenav__user_name">
+				<img role="UserPhoto" src="./img/Alyona.png" alt="User photo">
+				<div>
+					<div class="name">Maksym Saveskul</div>
+					<div class="username">MaxSaveskul</div>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a role="POS" class="dot_menu" href="#">
+							<img src="./img/POS.png" alt="POS">
+							<p>POS</p>
+						</a></li>
+					<li><a role="Products" class="dot_menu" href="#">
+							<img src="./img/products.png" alt="Products">
+							<p>Products</p>
+						</a></li>
+					<li><a role="Orders" class="dot_menu" href="#">
+							<img src="./img/orders.png" alt="Orders">
+							<p>Orders</p>
+						</a></li>
+					<li><a role="Reports" class="dot_menu" href="#">
+							<img src="./img/reports.png" alt="Reports">
+							<p>Reports</p>
+						</a></li>
+					<li><a role="Customers" class="dot_menu" href="#">
+							<img src="./img/customers.png" alt="Customers">
+							<p>Customers</p>
+						</a></li>
+					<li><a role="Dashboard" class="dot_menu" href="#">
+							<img src="./img/dashboard.png" alt="Dashboard">
+							<p>Dashboard</p>
+						</a></li>
+					<li><a role="Settings" class="dot_menu" href="#">
+							<img src="./img/settings.png" alt="Settings">
+							<p>Settings</p>
+						</a></li>
+					<li><a role="Stations" class="dot_menu" href="#">
+							<img src="./img/stations.png" alt="Stations">
+							<p>Stations</p>
+						</a></li>
+					<li><a role="Support" class="dot_menu" href="#">
+							<img src="./img/support.png" alt="Support">
+							<p>Support</p>
+						</a></li>
+
+				</ul>
+			</nav>
+			<div class="menu_buttonss">
+				<button role="SyncNow">
+					<img src="./img/sync.png" alt="Sync Now">
+					<p>Sync Now</p>
+				</button>
+				<button role="LogOut">
+					<img src="./img/logout.png" alt="Log out">
+					<p>Log out</p>
+				</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="code.js">
+	</script>
+</body>
+
+</html>
